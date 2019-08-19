@@ -45,8 +45,7 @@ public class Join {
 		System.out.println("몸무게를 입력해주세요");
 		double weight = scan.nextDouble();
 		System.out.println("혈액형을 입력해주세요");
-		String type = scan.next();
-		System.out.println("혈액형을 입력해주세요");	
+		String type = scan.next();	
 		
 		System.out.println("=====회원정보=====");
 		System.out.println("아이디 :" +id);

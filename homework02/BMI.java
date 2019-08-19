@@ -28,19 +28,22 @@ public class BMI {
 		double weight = scan.nextDouble();
 		System.out.println("키를 입력하세요");
 		double height = scan.nextDouble();
+		double bmi = 0.0;
+		String s = "";
 		
-		double bmi = weight / (height/100 * height/100);
+		bmi = weight / (height/100 * height/100);
 		if(bmi > 30.0) {
-			System.out.println("고도비만입니다.");
+			 s = "고도비만";
 		}else if(bmi > 25.0) {
-			System.out.println("비만입니다.");
+			s = "비만";
 		}else if(bmi > 23.0) {
-			System.out.println("과체중입니다.");
+			s = "과체중";
 		}else if(bmi > 18.5) {
-			System.out.println("정상입니다");
+			s = "정상";
 		}else {
-			System.out.println("저체중입니다.");
+			s = "저체중";
 		}
+		System.out.printf("BMI지수 : %.1f, %s 입니다", bmi , s);
 
 	}
 
