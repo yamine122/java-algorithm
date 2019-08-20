@@ -14,11 +14,11 @@ public class TimeCalc {
 
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
-		int s= 0;
+		int s2= 0;
 		System.out.println("초를 입력하세요");
-		s = scan.nextInt();
+		s2 = scan.nextInt();
 		
-		System.out.println(s/3600 +"시간" +s%3600/60+"분"+s%3600%60+"초");
+		System.out.println(s2/3600 +"시간" +s2%3600/60+"분"+s2%3600%60+"초");
 		
 		
 	}

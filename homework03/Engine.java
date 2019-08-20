@@ -12,7 +12,7 @@ public class Engine {
 			switch(scan.nextInt()){
 			case 0 : System.out.println("종료"); return;
 			case 1 : break;
-			case 2 : System.out.println("BMI 이름 몸무게 키를 입력하시오");
+			case 2 : System.out.println("BMI실행 이름 몸무게 키를 입력하시오");
 					String name = scan.next();
 					int weight = scan.nextInt();
 					int height = scan.nextInt();
@@ -28,8 +28,8 @@ public class Engine {
 					 int password = scan.nextInt();
 					 name = scan.next();
 					 int adult = scan.nextInt();
-					 double height2 = scan.nextDouble();
-					 double weight2 = scan.nextDouble();
+					 int height2 = scan.nextInt();
+					 int weight2 = scan.nextInt();
 					 String type = scan.next();
 					 result = student.getJoin(id, password, name, adult, height2, weight2, type);
 					 System.out.println(result);
@@ -43,7 +43,8 @@ public class Engine {
 			case 6 : 
 					 System.out.println("월을 입력해주세요");
 					 int month = scan.nextInt();
-					 result = student.getMonthEndDay(month);
+					 int day = 0;
+					 result = student.getMonthEndDay(month, day);
 					 System.out.println(result);
 					 break;
 			case 7 : 
@@ -60,9 +61,25 @@ public class Engine {
 					 result = student.getReportCard(name, kor, eng, math);
 					 System.out.println(result);
 				     break;
-			case 9 : break;
-			case 10 : break;
-			case 11 : break;
+			case 9 : 
+				 	 
+					 break;
+			case 10 :
+					 System.out.println("이름을 입력해주세요");
+					 name = scan.next();
+					 System.out.println("연봉을 입력해주세요");
+					 int money = scan.nextInt();
+					 System.out.println("세율을 입력해주세요");
+					 double rate = scan.nextDouble();
+					 result = student.getTax(name, money, rate);
+					 System.out.println(result);
+					  break;
+			case 11 : 
+					 System.out.println("초를 입력하세요");
+					 int s2 = scan.nextInt();
+					 result = student.getTimeCalc(s2);
+					 System.out.println(result);
+				 	 break;
 			}
 		}
 
