@@ -1,4 +1,4 @@
-package study05;
+package study06;
 
 public class Service {
 	public String getBmi(Member member) {
@@ -11,6 +11,7 @@ public class Service {
 	}
 	public String getReportCard(Member member) {
 		String result = "";
+		int kor = member.getKor();		
 		return result;
 	}
 	public String getTax(Member member) {

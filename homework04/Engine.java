@@ -64,7 +64,7 @@ public class Engine {
 				if(searchName.equals("a") &&
 						searchId.equals("a")) {
 					System.out.printf("이름:%s"
-							+"주민번호 : %s", member.getName(), member.getSsn());
+							+"생년월일 : %s", member.getName(), member.getSsn());
 				}else {
 					System.out.println(member.getId());
 				}

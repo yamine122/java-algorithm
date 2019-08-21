@@ -1,8 +1,9 @@
-package study05;
+package study06;
 
 public class Member {
 	private String name, id, password, ssn, type;
 	private double height, weight;
+	private int kor;
 	
 	public void setName(String name) {
 		this.name = name;
@@ -46,7 +47,12 @@ public class Member {
 	public double getWeight() {
 		return this.weight;
 	}
-
+	public void setKor(int kor) {
+		this.kor = kor;
+	}
+	public int getKor() {
+		return this.kor;
+	}
 	@Override
 	public String toString() {
 		return String.format("회원정보 : \n"

@@ -1,9 +1,9 @@
-package study05;
+package homework05_member;
 
 public class Member {
-	private String name, id, password, ssn, type;
+	private String id, password, name, ssn, blood;
 	private double height, weight;
-	
+	private int money;
 	public void setName(String name) {
 		this.name = name;
 	}
@@ -28,11 +28,11 @@ public class Member {
 	public String getSsn() {
 		return this.ssn;
 	}
-	public void setType(String type) {
-		this.type = type;
+	public void setBlood(String blood) {
+		this.blood = blood;
 	}
-	public String getType() {
-		return this.type;
+	public String getBlood() {
+		return this.blood;
 	}
 	public void setHeight(double height) {
 		this.height = height;
@@ -46,8 +46,13 @@ public class Member {
 	public double getWeight() {
 		return this.weight;
 	}
-
-	@Override
+	public void setMoney(int money) {
+		this.money = money;
+	}
+	public int getMoney() {
+		return this.money;
+	}
+	
 	public String toString() {
 		return String.format("회원정보 : \n"
 				+ "이름 : %s \n"
@@ -56,7 +61,9 @@ public class Member {
 				+ "주민번호 : %s \n"
 				+ "혈액형 : %s \n"
 				+ "키 : %.1f \n"
-				+ "몸무게 : %.1f \n", name, id, password, ssn, type, height, weight);
+				+ "몸무게 : %.1f \n", name, id, password, ssn, blood, height, weight);
 	}
+	}
+	
 
-}
+

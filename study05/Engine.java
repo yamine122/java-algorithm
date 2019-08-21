@@ -3,7 +3,7 @@ package study05;
 import java.util.Scanner;
 
 public class Engine {
-
+	
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
 		Member member = null;
@@ -13,7 +13,7 @@ public class Engine {
 			switch(scan.nextInt()) {
 			case 0 : return;
 			case 1 : 
-				
+			 	
 				member = new Member();
 			
 				System.out.println("회원가입");
@@ -32,7 +32,6 @@ public class Engine {
 				System.out.println("혈액형을 입력해주세요");
 				member.setType(scan.next());
 				System.out.println("국어점수");
-				member.setKor(scan.nextInt());
 				break;
 			case 2 : 
 				System.out.println(member.toString());
